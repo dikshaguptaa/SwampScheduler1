@@ -1,5 +1,14 @@
 # 🐊 Swamp Scheduler 📆
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Issues](https://img.shields.io/github/issues/ufosc/SwampScheduler)
+![License](https://img.shields.io/github/license/ufosc/SwampScheduler)
+![Contributors](https://img.shields.io/github/contributors/ufosc/SwampScheduler)
+![Last Commit](https://img.shields.io/github/last-commit/ufosc/SwampScheduler)
+![Forks](https://img.shields.io/github/forks/ufosc/SwampScheduler)
+![GitHub stars](https://img.shields.io/github/stars/ufosc/SwampScheduler?style=social)
+
+
 An open-source web app developed to help students at the University of Florida plan for classes next
 semester. [It's available now!](https://osc.rconde.xyz/)
 
@@ -27,7 +36,18 @@ Made with :heart: by [UF's Open Source Club](https://ufosc.org) ([@ufosc](https:
 
 ### Prerequisites
 
-Make sure to have `npm` installed.
+This is to be done in command prompt.
+Make sure to navigate to the desired directory you want to set up the project in using:
+```shell
+cd path/to/directory
+```
+
+Make sure to have `npm` and 'nodejs' installed.
+
+```shell
+sudo apt install nodejs
+sudo apt install npm
+```
 
 ### Setup
 
@@ -41,18 +61,43 @@ git clone <repository-url>
 
 #### Install the Dependencies
 
-Enter the web-app directory (`/app`) and install the dependencies (React, Tailwind CSS, etc.):
+Enter the SwampScheduler directory, then navigate to the app folder and install the necessary dependencies (React, Tailwind CSS, etc.):
 
 ```shell
-cd app
+cd SwampScheduler/app
 npm install
 ```
 
+Install Prettier: Prettier is a code formatter that make sure the coding style is consistent.
+```shell
+npm install --save-dev prettier
+```
+Vulnerabilities: There might be some vulnerabilities within the package, so it is necessary run
+  ```shell
+  npm audit
+  ```
+This may not be necessarily important for everyone depending on their devices, so follow the instructions given by the terminal.
+
+Run Prettier:
+  ```shell
+  npx prettier --write
+  ```
+
 ### Usage:
 
-- In the web-app directory:
-    - **Development:** Run `npm run dev` to run the development server locally (with hot reloading).
-    - **Production:** Run `npm run build` to build the app to `/app/dist`.
+In the web-app directory:
+- **Development:** Run `npm run dev` to run the development server locally (with hot reloading).
+  ```shell
+  npm run dev
+  ```
+- **Production:** Run `npm run build` to build the app to `/app/dist`.
+  ```shell
+  npm run build
+  ```
+- Ensure that `dist` is a file in the `app` folder using `dir`
+  ```shell
+  dir
+  ```
 
 ## Contribution
 
@@ -74,6 +119,25 @@ This project is built using a variety of exciting technologies, including:
       theming.
 - **Vite:** Simply used as a build tool and development server.
     - Learn how to set up, configure, and use Vite from [Vite’s official guide](https://vitejs.dev/guide/).
+
+### How to Contribute
+
+1. Fork the repository to your GitHub account.
+2. Clone your fork to the local machine.
+3. Create a branch for the changes.
+4. Make the changes on the local branch.
+5. Test to ensure the code passes all existing tests and create new tests when necessary.
+6. Commit the changes in a clear message.
+7. Push the changes to the GitHub fork.
+8. Submit a pull request by going to the original repo and submit a PR by linking it to the relevant issue.
+9. Be responsive to comments or reach out to repo owners to let them know of any changes.
+
+### Follow The Projects' Style
+Make sure the the following components follow the codes current format style.
+- Indentation
+- Naming Conventions
+- Comments
+- Code Structure
 
 ### How It All Works
 
